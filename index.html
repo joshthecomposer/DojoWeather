@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class="navContain">
+        <nav>
+            <h1>DojoWeather</h1>
+            <p onclick="loading()">Burbank</p>
+            <p onclick="loading()">Chicago</p>
+            <p onclick="loading()">Dallas</p>
+        </nav>
+    </div>
+    <header>
+        <h2>San Jose</h2>
+        <p>show temperature in &nbsp</p>
+        <select id="tempType" onchange="conversion()">
+            <!-- <option value="" disabled selected></option> -->
+            <option value="cels">°C</option>
+            <option value="fahr">°F</option>
+        </select>
+    </header>
+    <main>
+        <div class="col">
+            <h3>Today</h3>
+            <div id="rain" class="weather"></div>
+            <h4>some rain</h4>
+            <div class="temps">
+                <h3 id="input7" class="high">24°</h3>
+                <h3 id="input8" class="low">18°</h3>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Tomorrow</h3>
+            <div id="sun1" class="weather"></div>
+            <h4>some sun</h4>
+            <div class="temps">
+                <h3 id="input5" class="high">27°</h3>
+                <h3 id="input6" class="low">19°</h3>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Friday</h3>
+            <div id="clouds" class="weather"></div>
+            <h4>some clouds</h4>
+            <div class="temps">
+                <h3 id="input1" class="high">21°</h3>
+                <h3 id="input2" class="low">16°</h3>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Saturday</h3>
+            <div id="sun2" class="weather"></div>
+            <h4>some sun</h4>
+            <div class="temps">
+                <h3 id="input3" class="high">26°</h3>
+                <h3 id="input4" class="low">21°</h3>
+            </div>
+        </div>
+        <div id="cookies">
+            <img src="./img/cookie.png" alt="cookie">
+            <div id="cookieText">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="btn" onclick="acceptCookies()">I accept</button>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

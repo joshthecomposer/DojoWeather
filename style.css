@@ -1,0 +1,235 @@
+/* font import */
+
+/* Roboto and Roboto Mono */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* init and resets*/
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding:  0;
+    box-sizing: border-box;
+    vertical-align: top;
+    outline: 0;
+    /* outline: red 1px dashed; */
+}
+
+body {
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+}
+
+/* Navbar */
+
+.navContain {
+    min-width: 43.9rem;
+    background-color: #9FC5F8;
+}
+
+nav {
+    min-width: 43.9rem;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    /* height: 6rem; */
+    padding: 2rem 3rem;
+    color: white;
+    text-decoration: bold;
+}
+nav h1 {
+    font-size: 4rem;
+    margin-right: auto;
+}
+
+p {
+    font-size: 1.9rem;
+}
+
+nav p:hover {
+    cursor: pointer;
+    color: #EEE;
+}
+
+nav p:active {
+    transform: scale(.95, .95);
+}
+
+header {
+    min-width: 43.9rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem 3rem;
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header h2 {
+    font-size: 3.2rem;
+    margin-right: auto;
+}
+
+select {
+    border: 2px solid black;
+    font-size: 1.6rem;
+}
+
+main {
+    min-width: 43.9rem;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    gap: 3rem;
+}
+
+.col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EEE;
+    border-radius: 8px;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    height: 35rem;
+    box-shadow: 3px 3px 3px #222;
+}
+
+.col h3 {
+    font-size: 2.5rem;
+}
+
+.weather {
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 8rem;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#rain {
+    background-image: url(./img/some_rain.png);
+}
+
+#sun1, #sun2 {
+    background-image: url(./img/some_sun.png);
+}
+
+#clouds {
+    background-image: url(./img/some_clouds.png);
+}
+
+.temps {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+#cookies {
+    min-width: 43.9rem;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+    background-color: #EEE;
+    border: 2px solid black;
+    padding: 3rem;
+}
+
+.btn {
+    color: white;
+    padding: 1rem 2rem;
+    width: 12rem;
+    background-color: rgb(40, 131, 131);
+    border: solid 2px black;
+    box-shadow: 3px 3px black;
+}
+
+.btn:hover {
+    background-color: rgb(107, 199, 199);
+}
+
+.btn:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1265px) {
+    main, nav, header{
+        width: 100%;
+        /* gap: 0; */
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    main, nav, header{
+        width: 100%;
+        gap: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 595px) {
+    main, nav, header, col{
+        width: 100%;
+        /* gap: 1rem; */
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+    #cookies {
+        gap: 0;
+        padding: 2vw;
+    }
+    #cookies p{
+        font-size: 3vw;
+    }
+
+    .btn {
+        font-size: 3vw;
+        height: 10vw;
+        padding: 0;
+        width: 30vw;
+    }
+    
+    #cookies h3 {
+        font-size: 5vw;
+    }
+    
+    #cookies img{
+        display: none;
+    }
+}
+
+
+
