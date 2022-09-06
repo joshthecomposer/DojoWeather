@@ -8,4 +8,4 @@ This was an assignment completed for Coding Dojo. I was given a wireframe and a 
 ### Additional funcionality for extra practice:
 * **Challenge** when the user changes the `<select>`, convert the temperature from Celsius to Fahrenheit
 ## I was given this wireframe as a reference:
-<img src='ref.png' height='500'>
+<img src='./img/ref.png' height='500'>
